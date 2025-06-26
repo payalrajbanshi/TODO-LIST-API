@@ -57,6 +57,47 @@ namespace TodoAPI.Controllers
 
             }
         }
+        // PUT: api/todo/{id}/complete
+        [HttpPut("{id}/complete")]
+        public async Task<IActionResult> MarkComplete(Guid id)
+        {
+            try
+            {
+                var success = await _todoServices.MarkTodoAsCompleteAsync(id);
+                if (!success)
+                {
+                    return NotFound(new { message = "Todo item not found" });
+                }
+
+                return Ok(new { message = "Todo marked as complete" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error marking todo as complete", error = ex.Message });
+            }
+        }
+
+        // DELETE: api/todo/{id}
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTodo(Guid id)
+        {
+            try
+            {
+                var success = await _todoServices.DeleteTodoAsync(id);
+                if (!success)
+                {
+                    return NotFound(new { message = "Todo item not found" });
+                }
+
+                return Ok(new { message = "Todo item deleted successfully" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error deleting todo", error = ex.Message });
+            }
+        }
+
+
 
     }
 }

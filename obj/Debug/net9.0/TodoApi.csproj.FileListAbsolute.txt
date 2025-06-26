@@ -149,6 +149,7 @@ C:\Users\Acer\OneDrive\Desktop\TodoApi\obj\Debug\net9.0\TodoApi.AssemblyInfo.cs
 C:\Users\Acer\OneDrive\Desktop\TodoApi\obj\Debug\net9.0\TodoApi.csproj.CoreCompileInputs.cache
 C:\Users\Acer\OneDrive\Desktop\TodoApi\obj\Debug\net9.0\TodoApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Acer\OneDrive\Desktop\TodoApi\obj\Debug\net9.0\TodoApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Acer\OneDrive\Desktop\TodoApi\obj\Debug\net9.0\TodoApi.sourcelink.json
 C:\Users\Acer\OneDrive\Desktop\TodoApi\obj\Debug\net9.0\scopedcss\bundle\TodoApi.styles.css
 C:\Users\Acer\OneDrive\Desktop\TodoApi\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Acer\OneDrive\Desktop\TodoApi\obj\Debug\net9.0\staticwebassets.build.json.cache
